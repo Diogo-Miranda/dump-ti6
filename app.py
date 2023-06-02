@@ -21,6 +21,9 @@ classes = {
     7: 'Volkswagen',
 }
 
+@app.route("/")
+def index():
+    return "<h1>Hello Azure!</h1>"
 
 @app.route('/classify-image', methods=['POST'])
 def classify_image():
